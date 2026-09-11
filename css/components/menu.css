@@ -3,9 +3,9 @@
 @layer components {
   /* 1. ARCHITECTURE DESKTOP */
   .nav-menu {
-    --nav-bg: #ffffff;
-    --nav-text: #020263;
-    --nav-accent: #0066cc;
+    --nav-bg: #000;
+    --nav-text: #fff;
+    --nav-accent: #F5F5F5;
     --nav-focus-ring: #ffbf00;
 
     display: flex;
