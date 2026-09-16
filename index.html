@@ -36,9 +36,7 @@
                         <a href="#sport" class="nav-menu__link">SPORT</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a href="#personnaliser" class="nav-menu__link"
-                            >PERSONNALISER</a
-                        >
+                        <a href="#personnaliser" class="nav-menu__link">PERSONNALISER</a>
                     </li>
                     <li class="nav-menu__item">
                         <a href="#foulée+" class="nav-menu__link">FOULÉE +</a>
@@ -47,7 +45,15 @@
             </nav>
         </header>
         <main>
-            <h1 class="titre-page">Chaussure</h1>
+          <nav aria-label="Fil d'Ariane" class="breadcrumb">
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="index.html" aria-current="page">Chaussures</a></li>
+            </ul>
+          </nav>
+
+          <h1 class="titre-page">Chaussure</h1>
+          <P>12 produit</P>
 
           <button type="button" id="btn-toggle-form" aria-controls="filter-form" aria-expanded="true">MASQUER LES FILTRES</button>
           <form id="filter-form">
