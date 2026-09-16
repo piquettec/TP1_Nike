@@ -20,6 +20,7 @@
 /* Dossier : css/components/ */
 @import url("css/components/menu.css") layer(components);
 @import url("css/components/accordeon.css") layer(components);
+@import url("css/components/fil-d-ariane.css") layer(components);
 /* @import url("css/components/modale.css") layer(components); */
 
 /* Temporaire - Pour tester une variable définie dans les settings */

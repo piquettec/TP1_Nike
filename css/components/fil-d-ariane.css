@@ -1,0 +1,52 @@
+.breadcrumb {
+    padding: 10px 0;
+    font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-size: 0.9rem;
+}
+
+/* Liste des liens */
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne sur mobile */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Éléments de la liste */
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+/* Séparateur visuel (ignoré par les lecteurs d'écran) */
+.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    margin: 0 12px;
+    color: #a0aec0; /* Gris clair */
+    font-weight: 300;
+}
+
+/* Style des liens cliquables */
+.breadcrumb a {
+    color: #4a5568; /* Gris foncé text */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Effet au survol des liens */
+.breadcrumb a:hover {
+    color: #1a202c; /* Presque noir */
+    text-decoration: underline;
+}
+
+/* Style de la page actuelle (élément actif) */
+.breadcrumb [aria-current="page"] {
+    color: #718096; /* Gris neutre intermédiaire */
+    font-weight: 500;
+    pointer-events: none; /* Désactive le clic sur la page active */
+    text-decoration: none;
+}
