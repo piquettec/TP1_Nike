@@ -26,3 +26,32 @@
 h1 {
   color: var(--couleur-principale);
 }
+
+.is-hidden {
+  display: none;
+}
+
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.filter-list li {
+  margin: 8px 0;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.list-option {
+  padding-left: 15px;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
