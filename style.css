@@ -12,7 +12,7 @@
 
 /* Dossier : css/base/ */
 @import url("css/base/normalize.css") layer(base);
-/* @import url("css/base/typography.css") layer(base); */
+@import url("css/base/typography.css") layer(base);
 
 /* Dossier : css/layout/ */
 /* @import url("css/layout/grid.css") layer(layout); */
