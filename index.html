@@ -11,7 +11,13 @@
     <body>
         <header>
             <nav class="nav-menu" aria-label="Navigation principale">
-                <button class="nav-menu__toggle" aria-expanded="false" aria-controls="nav-menu-list" aria-label="Ouvrir le menu de navigation">
+                <a href="#home" class="nav-menu__logo"> FOULÉE </a>
+                <button
+                    class="nav-menu__toggle"
+                    aria-expanded="false"
+                    aria-controls="nav-menu-list"
+                    aria-label="Ouvrir le menu de navigation"
+                >
                     <span
                         class="nav-menu__hamburger-icon"
                         aria-hidden="true"
@@ -19,9 +25,6 @@
                     <span class="nav-menu__libelle">Menu</span>
                 </button>
 
-                <li class="nav-menu__item nom-compagnie">
-                  <a href="#home" class="nav-menu__link">FOULÉE</a>
-                </li>
                 <ul id="nav-menu-list" class="nav-menu__list">
                     <li class="nav-menu__item">
                         <a href="#hommes" class="nav-menu__link">HOMMES</a>
@@ -36,7 +39,9 @@
                         <a href="#sport" class="nav-menu__link">SPORT</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a href="#personnaliser" class="nav-menu__link">PERSONNALISER</a>
+                        <a href="#personnaliser" class="nav-menu__link"
+                            >PERSONNALISER</a
+                        >
                     </li>
                     <li class="nav-menu__item">
                         <a href="#foulée+" class="nav-menu__link">FOULÉE +</a>
@@ -45,136 +50,334 @@
             </nav>
         </header>
         <main>
-          <nav aria-label="Fil d'Ariane" class="breadcrumb">
-            <ul>
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="index.html" aria-current="page">Chaussures</a></li>
-            </ul>
-          </nav>
-
-          <h1 class="titre-page">Chaussure</h1>
-          <P>12 produit</P>
-
-          <button type="button" id="btn-toggle-form" aria-controls="filter-form" aria-expanded="true">MASQUER LES FILTRES</button>
-          <form id="filter-form">
-            <fieldset>
-              <ul class="filter-list">
-                  <li class="section-title">SPORT</li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-course" name="sport" value="course" />
-                      <label for="Course" class="catégorie_sport">Course</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-basketball" name="sport" value="basketball" />
-                      <label for="Basketball" class="catégorie_sport">Basketball</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-football" name="sport" value="football" />
-                      <label for="Football" class="catégorie_sport">Football</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-training" name="sport" value="training" />
-                      <label for="Training" class="catégorie_sport">Training</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-lifestyle" name="sport" value="lifestyle" />
-                      <label for="Lifestyle" class="catégorie_sport">Lifestyle</label>
-                  </li>
+            <nav aria-label="Fil d'Ariane" class="breadcrumb">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li>
+                        <a href="index.html" aria-current="page">Chaussures</a>
+                    </li>
                 </ul>
+            </nav>
 
-              <ul class="filter-list">
-                  <li class="section-title">PRIX</li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter_0-80" name="prix" value="0-80" />
-                      <label for="0-80" class="catégorie_prix">Moins de 80$</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter_80-120" name="prix" value="80-120" />
-                      <label for="80-120" class="catégorie_prix">80$ - 120$</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter_120-180" name="prix" value="120-180" />
-                      <label for="120-180" class="catégorie_prix">120$ - 180$</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter_180+" name="prix" value="180+" />
-                      <label for="180+" class="catégorie_prix">Plus de 180$</label>
-                  </li>
-              </ul>
+            <h1 class="titre-page">Chaussure</h1>
+            <p>12 produit</p>
 
-              <ul class="filter-list">
-                <li class="section-title">COULEUR</li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-blanc" name="couleur" value="blanc" />
-                      <label for="Blanc" class="catégorie_couleur">Blanc</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-noir" name="couleur" value="noir" />
-                      <label for="Noir" class="catégorie_couleur">Noir</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-rouge" name="couleur" value="rouge" />
-                      <label for="Rouge" class="catégorie_couleur">Rouge</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-bleu" name="couleur" value="bleu" />
-                      <label for="Bleu" class="catégorie_couleur">Bleu</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-jaune" name="couleur" value="jaune" />
-                      <label for="Jaune" class="catégorie_couleur">Jaune</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="filter-gris" name="couleur" value="gris" />
-                      <label for="Gris" class="catégorie_couleur">Gris</label>
-                  </li>
-              </ul>
+            <button
+                type="button"
+                id="btn-toggle-form"
+                aria-controls="filter-form"
+                aria-expanded="true"
+            >
+                MASQUER LES FILTRES
+            </button>
+            <form id="filter-form">
+                <fieldset>
+                    <ul class="filter-list">
+                        <li class="section-title">SPORT</li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-course"
+                                name="sport"
+                                value="course"
+                            />
+                            <label for="Course" class="catégorie_sport"
+                                >Course</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-basketball"
+                                name="sport"
+                                value="basketball"
+                            />
+                            <label for="Basketball" class="catégorie_sport"
+                                >Basketball</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-football"
+                                name="sport"
+                                value="football"
+                            />
+                            <label for="Football" class="catégorie_sport"
+                                >Football</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-training"
+                                name="sport"
+                                value="training"
+                            />
+                            <label for="Training" class="catégorie_sport"
+                                >Training</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-lifestyle"
+                                name="sport"
+                                value="lifestyle"
+                            />
+                            <label for="Lifestyle" class="catégorie_sport"
+                                >Lifestyle</label
+                            >
+                        </li>
+                    </ul>
 
-              <ul class="filter-list">
-                <li class="section-title">POINTURE</li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-36" name="pointure" value="36" />
-                      <label for="pointure-36" class="catégorie_pointure">36</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-37" name="pointure" value="37" />
-                      <label for="pointure-37" class="catégorie_pointure">37</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-38" name="pointure" value="38" />
-                      <label for="pointure-38" class="catégorie_pointure">38</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-39" name="pointure" value="39" />
-                      <label for="pointure-39" class="catégorie_pointure">39</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-40" name="pointure" value="40" />
-                      <label for="pointure-40" class="catégorie_pointure">40</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-41" name="pointure" value="41" />
-                      <label for="pointure-41" class="catégorie_pointure">41</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-42" name="pointure" value="42" />
-                      <label for="pointure-42" class="catégorie_pointure">42</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-43" name="pointure" value="43" />
-                      <label for="pointure-43" class="catégorie_pointure">43</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-44" name="pointure" value="44" />
-                      <label for="pointure-44" class="catégorie_pointure">44</label>
-                  </li>
-                  <li class="list-option">
-                      <input type="checkbox" id="pointure-45" name="pointure" value="45" />
-                      <label for="pointure-45" class="catégorie_pointure">45</label>
-                  </li>
-                </ul>
-            </fieldset>
-          </form>
+                    <ul class="filter-list">
+                        <li class="section-title">PRIX</li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter_0-80"
+                                name="prix"
+                                value="0-80"
+                            />
+                            <label for="0-80" class="catégorie_prix"
+                                >Moins de 80$</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter_80-120"
+                                name="prix"
+                                value="80-120"
+                            />
+                            <label for="80-120" class="catégorie_prix"
+                                >80$ - 120$</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter_120-180"
+                                name="prix"
+                                value="120-180"
+                            />
+                            <label for="120-180" class="catégorie_prix"
+                                >120$ - 180$</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter_180+"
+                                name="prix"
+                                value="180+"
+                            />
+                            <label for="180+" class="catégorie_prix"
+                                >Plus de 180$</label
+                            >
+                        </li>
+                    </ul>
+
+                    <ul class="filter-list">
+                        <li class="section-title">COULEUR</li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-blanc"
+                                name="couleur"
+                                value="blanc"
+                            />
+                            <label for="Blanc" class="catégorie_couleur"
+                                >Blanc</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-noir"
+                                name="couleur"
+                                value="noir"
+                            />
+                            <label for="Noir" class="catégorie_couleur"
+                                >Noir</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-rouge"
+                                name="couleur"
+                                value="rouge"
+                            />
+                            <label for="Rouge" class="catégorie_couleur"
+                                >Rouge</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-bleu"
+                                name="couleur"
+                                value="bleu"
+                            />
+                            <label for="Bleu" class="catégorie_couleur"
+                                >Bleu</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-jaune"
+                                name="couleur"
+                                value="jaune"
+                            />
+                            <label for="Jaune" class="catégorie_couleur"
+                                >Jaune</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="filter-gris"
+                                name="couleur"
+                                value="gris"
+                            />
+                            <label for="Gris" class="catégorie_couleur"
+                                >Gris</label
+                            >
+                        </li>
+                    </ul>
+
+                    <ul class="filter-list">
+                        <li class="section-title">POINTURE</li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-36"
+                                name="pointure"
+                                value="36"
+                            />
+                            <label for="pointure-36" class="catégorie_pointure"
+                                >36</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-37"
+                                name="pointure"
+                                value="37"
+                            />
+                            <label for="pointure-37" class="catégorie_pointure"
+                                >37</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-38"
+                                name="pointure"
+                                value="38"
+                            />
+                            <label for="pointure-38" class="catégorie_pointure"
+                                >38</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-39"
+                                name="pointure"
+                                value="39"
+                            />
+                            <label for="pointure-39" class="catégorie_pointure"
+                                >39</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-40"
+                                name="pointure"
+                                value="40"
+                            />
+                            <label for="pointure-40" class="catégorie_pointure"
+                                >40</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-41"
+                                name="pointure"
+                                value="41"
+                            />
+                            <label for="pointure-41" class="catégorie_pointure"
+                                >41</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-42"
+                                name="pointure"
+                                value="42"
+                            />
+                            <label for="pointure-42" class="catégorie_pointure"
+                                >42</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-43"
+                                name="pointure"
+                                value="43"
+                            />
+                            <label for="pointure-43" class="catégorie_pointure"
+                                >43</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-44"
+                                name="pointure"
+                                value="44"
+                            />
+                            <label for="pointure-44" class="catégorie_pointure"
+                                >44</label
+                            >
+                        </li>
+                        <li class="list-option">
+                            <input
+                                type="checkbox"
+                                id="pointure-45"
+                                name="pointure"
+                                value="45"
+                            />
+                            <label for="pointure-45" class="catégorie_pointure"
+                                >45</label
+                            >
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+
+            <div class="carte_soulier">
+                <picture class="image-soulier">
+                    <source srcset="images/" media="(max-width: 600px)" />
+                    <source
+                        srcset="https://placehold.co/295x180"
+                        media="(max-width: 2000px)"
+                    />
+                    <img
+                        src="https://placehold.co/1000x250"
+                        alt="Image qui n'en est pas une"
+                    />
+                </picture>
+            </div>
         </main>
     </body>
 </html>

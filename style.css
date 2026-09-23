@@ -15,7 +15,7 @@
 @import url("css/base/typography.css") layer(base);
 
 /* Dossier : css/layout/ */
-/* @import url("css/layout/grid.css") layer(layout); */
+@import url("css/layout/grid.css") layer(layout);
 
 /* Dossier : css/components/ */
 @import url("css/components/menu.css") layer(components);
