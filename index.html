@@ -49,7 +49,7 @@
                     </li>
                 </ul>
 
-                <div class="nav-menu__action">
+                <div class="nav-menu__actions">
                     <form
                         role="search"
                         action="zone-de-recherche.html"
@@ -103,7 +103,7 @@
 
             <p class="nombre-produits">12 produits</p>
 
-            <nav class="categories" aria-label="Catégories de chaussures">
+            <nav class="categories">
                 <button type="button" class="categorie categorie-active">
                     TOUS
                 </button>
@@ -117,14 +117,45 @@
 
             <section class="catalogue">
                 <aside class="filtres">
-                    <button
-                        type="button"
-                        id="btn-toggle-form"
-                        aria-controls="filter-form"
-                        aria-expanded="true"
-                    >
-                        MASQUER LES FILTRES
-                    </button>
+                    <div class="filtres">
+                        <button
+                            type="button"
+                            id="btn-toggle-form"
+                            aria-controls="filter-form"
+                            aria-expanded="true"
+                            class="btn__filtre"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="10"
+                                viewBox="0 0 13 10"
+                                fill="none"
+                            >
+                                <line
+                                    y1="0.5"
+                                    x2="13"
+                                    y2="0.5"
+                                    stroke="black"
+                                />
+                                <line
+                                    x1="4"
+                                    y1="4.5"
+                                    x2="13"
+                                    y2="4.5"
+                                    stroke="black"
+                                />
+                                <line
+                                    x1="7"
+                                    y1="9.5"
+                                    x2="13"
+                                    y2="9.5"
+                                    stroke="black"
+                                />
+                            </svg>
+                            MASQUER LES FILTRES
+                        </button>
+                    </div>
 
                     <form id="filter-form">
                         <fieldset>
@@ -461,7 +492,7 @@
                                     media="(max-width: 600px)"
                                 />
                                 <source
-                                    srcset="https://placehold.co/295x180"
+                                    srcset="https://placehold.co/250x180"
                                     media="(max-width: 2000px)"
                                 />
                                 <img
@@ -488,5 +519,26 @@
                 </section>
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer__logo">FOULÉE</div>
+
+            <div class="footer__copyright">
+                © 2017 FOULÉE.<br />
+                Tous droits réservés 2017.
+            </div>
+
+            <nav class="footer__nav" aria-label="Navigation secondaire">
+                <a href="#">ACCUEIL</a>
+                <a href="#">À PROPOS</a>
+                <a href="#">SUPPORT</a>
+                <a href="#">CONTACT</a>
+            </nav>
+
+            <p class="footer__description">
+                FOULÉE est une boutique spécialisée dans la vente de chaussures
+                de sport et de lifestyle. Nous offrons une sélection
+                soigneusement choisie pour hommes, femmes et enfants.
+            </p>
+        </footer>
     </body>
 </html>
