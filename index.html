@@ -54,7 +54,6 @@
                         action="zone-de-recherche.html"
                         class="search-form"
                     >
-    
                         <input
                             type="search"
                             id="search-input"
@@ -62,7 +61,7 @@
                             placeholder="Rechercher"
                             autocomplete="off"
                         />
-    
+
                         <button type="submit" class="nav-cart">
                             <svg
                                 aria-hidden="true"
@@ -77,7 +76,12 @@
                                 stroke-linejoin="round"
                             >
                                 <circle cx="11" cy="11" r="8"></circle>
-                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                <line
+                                    x1="21"
+                                    y1="21"
+                                    x2="16.65"
+                                    y2="16.65"
+                                ></line>
                             </svg>
                         </button>
                     </form>
@@ -94,8 +98,27 @@
                 </ul>
             </nav>
 
-            <h1 class="titre-page">Chaussure</h1>
-            <p>12 produit</p>
+            <h1 class="titre-page">CHAUSSURES</h1>
+
+            <p class="nombre-produits">12 produits</p>
+
+            <nav class="categories" aria-label="Catégories de chaussures">
+                <button type="button" class="categorie categorie-active">
+                    TOUS
+                </button>
+
+                <button type="button" class="categorie">
+                    HOMMES
+                </button>
+
+                <button type="button" class="categorie">
+                    FEMMES
+                </button>
+
+                <button type="button" class="categorie">
+                    ENFANTS
+                </button>
+            </nav>
 
             <button
                 type="button"
