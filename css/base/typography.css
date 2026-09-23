@@ -3,3 +3,20 @@
 * {
   font-family: 'Barlow Condensed';
 }
+
+.catégorie_sport,
+.catégorie_prix,
+.catégorie_couleur,
+.catégorie_pointure {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2.24px;
+}
