@@ -1,0 +1,32 @@
+.titre-page {
+    margin: 20px 0 0;
+    font-weight: 900;
+    color: #101827;
+}
+
+.categories {
+    display: flex;
+    gap: 6px;
+
+    margin: 20px 0 30px;
+}
+
+.categorie {
+    padding: 10px 18px;
+
+    border: 1px solid #dddddd;
+
+    background-color: white;
+
+    color: #555555;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.categorie-active {
+    background-color: #111111;
+    color: white;
+}
