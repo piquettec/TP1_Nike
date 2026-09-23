@@ -30,3 +30,74 @@
     background-color: #111111;
     color: white;
 }
+
+.soulier__images {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 250px;
+
+    background-color: #f5f5f5;
+}
+
+.image__soulier {
+    display: block;
+
+    width: 100%;
+    max-width: 300px;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+.soulier__info {
+    padding: 16px;
+
+    background-color: white;
+}
+
+.soulier__genre {
+    margin: 0 0 8px;
+
+    color: #1594bd;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.soulier__nom {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.soulier__prix {
+    margin: 12px 0 0;
+
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.soulier__panier {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 14px;
+
+    border: 1px solid #eeeeee;
+
+    background-color: white;
+
+    color: #aaaaaa;
+
+    font-size: 12px;
+    font-weight: 700;
+}
