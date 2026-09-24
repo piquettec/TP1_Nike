@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 250px;
+    min-height: 183px;
     background-color: #f5f5f5;
     overflow: hidden;
 }
@@ -56,7 +56,7 @@
 }
 
 .soulier__info {
-    padding: 16px;
+    padding: 10px;
     background-color: white;
 }
 
@@ -123,13 +123,19 @@ main {
     color: #111111;
 }
 
+.haut__page {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
 .catalogue {
     display: grid;
     grid-template-columns: 230px minmax(0, 1fr);
     gap: 30px;
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 40px auto;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 .filtres__catalogue {
@@ -191,7 +197,6 @@ main {
 .souliers {
     display: grid;
     width: 925px;
-    height: 1637px;
     row-gap: 33px;
     column-gap: 20px;
     grid-template-rows: repeat(4, minmax(0, 1fr));
@@ -242,4 +247,31 @@ main {
     justify-content: space-between;
     min-width: 0;
     width: 100%;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 180px 180px 1fr 2fr;
+    gap: 40px;
+    margin-top: 80px;
+    background-color: #292929;
+    color: #ffffff;
+}
+
+.footer__logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.footer__copyright {
+    color: #999999;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }

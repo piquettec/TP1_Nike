@@ -89,31 +89,33 @@
             </nav>
         </header>
         <main>
-            <nav aria-label="Fil d'Ariane" class="breadcrumb">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li>
-                        <a href="index.html" aria-current="page">Chaussures</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <h1 class="titre-page">CHAUSSURES</h1>
-
-            <p class="nombre-produits">12 produits</p>
-
-            <nav class="categories">
-                <button type="button" class="categorie categorie-active">
-                    TOUS
-                </button>
-
-                <button type="button" class="categorie">HOMMES</button>
-
-                <button type="button" class="categorie">FEMMES</button>
-
-                <button type="button" class="categorie">ENFANTS</button>
-            </nav>
-
+            <div class="haut__page">
+                <nav aria-label="Fil d'Ariane" class="breadcrumb">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>
+                            <a href="index.html" aria-current="page">Chaussures</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <h1 class="titre-page">CHAUSSURES</h1>
+                
+                <p class="nombre-produits">12 produits</p>
+                
+                <nav class="categories">
+                    <button type="button" class="categorie categorie-active">
+                        TOUS
+                    </button>
+                    
+                    <button type="button" class="categorie">HOMMES</button>
+                    
+                    <button type="button" class="categorie">FEMMES</button>
+                    
+                    <button type="button" class="categorie">ENFANTS</button>
+                </nav>
+            </div>
+                
             <section class="catalogue">
                 <aside class="filtres__catalogue">
                     <div class="filtres">
@@ -518,7 +520,6 @@
 
                     <article class="soulier__carte">
                         <div class="soulier__images">
-                            <span class="nouveau__soulier"> NOUVEAU </span>
 
                             <picture class="image__soulier">
                                 <source
@@ -531,7 +532,41 @@
                                 />
                                 <img
                                     src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
+                                    alt="AIR FORCE MID LEATHER"
+                                />
+                            </picture>
+                        </div>
+
+                        <div class="soulier__info">
+                            <p class="soulier__genre">FEMMES</p>
+
+                            <h2 class="soulier__nom">AIR FORCE MID LEATHER</h2>
+
+                            <p class="soulier__couleurs">4 couleurs</p>
+
+                            <p class="soulier__prix">109,99$</p>
+                        </div>
+
+                        <button class="soulier__panier">
+                            AJOUTER AU PANIER
+                        </button>
+                    </article>
+
+                    <article class="soulier__carte">
+                        <div class="soulier__images">
+
+                            <picture class="image__soulier">
+                                <source
+                                    srcset="images/"
+                                    media="(max-width: 600px)"
+                                />
+                                <source
+                                    srcset="https://placehold.co/295x183"
+                                    media="(max-width: 2000px)"
+                                />
+                                <img
+                                    src="https://placehold.co/1000x250"
+                                    alt="AIR JORDAN RETRO DECON"
                                 />
                             </picture>
                         </div>
@@ -539,11 +574,79 @@
                         <div class="soulier__info">
                             <p class="soulier__genre">HOMMES</p>
 
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
+                            <h2 class="soulier__nom">AIR JORDAN RETRO DECON</h2>
+
+                            <p class="soulier__couleurs">5 couleurs</p>
+
+                            <p class="soulier__prix">189,99$</p>
+                        </div>
+
+                        <button class="soulier__panier">
+                            AJOUTER AU PANIER
+                        </button>
+                    </article>
+
+                    <article class="soulier__carte">
+                        <div class="soulier__images">
+
+                            <picture class="image__soulier">
+                                <source
+                                    srcset="images/"
+                                    media="(max-width: 600px)"
+                                />
+                                <source
+                                    srcset="https://placehold.co/295x183"
+                                    media="(max-width: 2000px)"
+                                />
+                                <img
+                                    src="https://placehold.co/1000x250"
+                                    alt="AIR VORTEX"
+                                />
+                            </picture>
+                        </div>
+
+                        <div class="soulier__info">
+                            <p class="soulier__genre">HOMMES</p>
+
+                            <h2 class="soulier__nom">AIR VORTEX</h2>
 
                             <p class="soulier__couleurs">3 couleurs</p>
 
-                            <p class="soulier__prix">129,99$</p>
+                            <p class="soulier__prix">99,99$</p>
+                        </div>
+
+                        <button class="soulier__panier">
+                            AJOUTER AU PANIER
+                        </button>
+                    </article>
+
+                    <article class="soulier__carte">
+                        <div class="soulier__images">
+
+                            <picture class="image__soulier">
+                                <source
+                                    srcset="images/"
+                                    media="(max-width: 600px)"
+                                />
+                                <source
+                                    srcset="https://placehold.co/295x183"
+                                    media="(max-width: 2000px)"
+                                />
+                                <img
+                                    src="https://placehold.co/1000x250"
+                                    alt="COURT BOROUGH MID"
+                                />
+                            </picture>
+                        </div>
+
+                        <div class="soulier__info">
+                            <p class="soulier__genre">HOMMES</p>
+
+                            <h2 class="soulier__nom">COURT BOROUGH MID</h2>
+
+                            <p class="soulier__couleurs">4 couleurs</p>
+
+                            <p class="soulier__prix">79,99$</p>
                         </div>
 
                         <button class="soulier__panier">
@@ -566,19 +669,19 @@
                                 />
                                 <img
                                     src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
+                                    alt="CLASSIC CORTEZ NYLON B"
                                 />
                             </picture>
                         </div>
 
                         <div class="soulier__info">
-                            <p class="soulier__genre">HOMMES</p>
+                            <p class="soulier__genre">FEMMES</p>
 
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
+                            <h2 class="soulier__nom">CLASSIC CORTEZ NYLON B</h2>
 
-                            <p class="soulier__couleurs">3 couleurs</p>
+                            <p class="soulier__couleurs">2 couleurs</p>
 
-                            <p class="soulier__prix">129,99$</p>
+                            <p class="soulier__prix">89,99$</p>
                         </div>
 
                         <button class="soulier__panier">
@@ -601,7 +704,7 @@
                                 />
                                 <img
                                     src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
+                                    alt="AIR MAX ULTRA MOIRE"
                                 />
                             </picture>
                         </div>
@@ -609,11 +712,45 @@
                         <div class="soulier__info">
                             <p class="soulier__genre">HOMMES</p>
 
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
+                            <h2 class="soulier__nom">AIR MAX ULTRA MOIRE</h2>
 
-                            <p class="soulier__couleurs">3 couleurs</p>
+                            <p class="soulier__couleurs">4 couleurs</p>
 
-                            <p class="soulier__prix">129,99$</p>
+                            <p class="soulier__prix">149,99$</p>
+                        </div>
+
+                        <button class="soulier__panier">
+                            AJOUTER AU PANIER
+                        </button>
+                    </article>
+
+                    <article class="soulier__carte">
+                        <div class="soulier__images">
+
+                            <picture class="image__soulier">
+                                <source
+                                    srcset="images/"
+                                    media="(max-width: 600px)"
+                                />
+                                <source
+                                    srcset="https://placehold.co/295x183"
+                                    media="(max-width: 2000px)"
+                                />
+                                <img
+                                    src="https://placehold.co/1000x250"
+                                    alt="AIR MAX ZERO"
+                                />
+                            </picture>
+                        </div>
+
+                        <div class="soulier__info">
+                            <p class="soulier__genre">FEMMES</p>
+
+                            <h2 class="soulier__nom">AIR MAX ZERO</h2>
+
+                            <p class="soulier__couleurs">6 couleurs</p>
+
+                            <p class="soulier__prix">119,99$</p>
                         </div>
 
                         <button class="soulier__panier">
@@ -636,7 +773,41 @@
                                 />
                                 <img
                                     src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
+                                    alt="BLAZER LOW LX"
+                                />
+                            </picture>
+                        </div>
+
+                        <div class="soulier__info">
+                            <p class="soulier__genre">FEMMES</p>
+
+                            <h2 class="soulier__nom">BLAZER LOW LX</h2>
+
+                            <p class="soulier__couleurs">3 couleurs</p>
+
+                            <p class="soulier__prix">109,99$</p>
+                        </div>
+
+                        <button class="soulier__panier">
+                            AJOUTER AU PANIER
+                        </button>
+                    </article>
+
+                    <article class="soulier__carte">
+                        <div class="soulier__images">
+
+                            <picture class="image__soulier">
+                                <source
+                                    srcset="images/"
+                                    media="(max-width: 600px)"
+                                />
+                                <source
+                                    srcset="https://placehold.co/295x183"
+                                    media="(max-width: 2000px)"
+                                />
+                                <img
+                                    src="https://placehold.co/1000x250"
+                                    alt="CORTEZ ULTRA MOIRE"
                                 />
                             </picture>
                         </div>
@@ -644,11 +815,45 @@
                         <div class="soulier__info">
                             <p class="soulier__genre">HOMMES</p>
 
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
+                            <h2 class="soulier__nom">CORTEZ ULTRA MOIRE</h2>
+
+                            <p class="soulier__couleurs">5 couleurs</p>
+
+                            <p class="soulier__prix">99,99$</p>
+                        </div>
+
+                        <button class="soulier__panier">
+                            AJOUTER AU PANIER
+                        </button>
+                    </article>
+
+                    <article class="soulier__carte">
+                        <div class="soulier__images">
+
+                            <picture class="image__soulier">
+                                <source
+                                    srcset="images/"
+                                    media="(max-width: 600px)"
+                                />
+                                <source
+                                    srcset="https://placehold.co/295x183"
+                                    media="(max-width: 2000px)"
+                                />
+                                <img
+                                    src="https://placehold.co/1000x250"
+                                    alt="FLEX SUPREME TR 5B"
+                                />
+                            </picture>
+                        </div>
+
+                        <div class="soulier__info">
+                            <p class="soulier__genre">FEMMES</p>
+
+                            <h2 class="soulier__nom">FLEX SUPREME TR 5B</h2>
 
                             <p class="soulier__couleurs">3 couleurs</p>
 
-                            <p class="soulier__prix">129,99$</p>
+                            <p class="soulier__prix">89,99$</p>
                         </div>
 
                         <button class="soulier__panier">
@@ -671,229 +876,19 @@
                                 />
                                 <img
                                     src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
+                                    alt="LUNAR CHARGE ESSENTIAL"
                                 />
                             </picture>
                         </div>
 
                         <div class="soulier__info">
-                            <p class="soulier__genre">HOMMES</p>
+                            <p class="soulier__genre">FEMMES</p>
 
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
+                            <h2 class="soulier__nom">LUNAR CHARGE ESSENTIAL</h2>
 
-                            <p class="soulier__couleurs">3 couleurs</p>
+                            <p class="soulier__couleurs">4 couleurs</p>
 
-                            <p class="soulier__prix">129,99$</p>
-                        </div>
-
-                        <button class="soulier__panier">
-                            AJOUTER AU PANIER
-                        </button>
-                    </article>
-
-                    <article class="soulier__carte">
-                        <div class="soulier__images">
-                            <span class="nouveau__soulier"> NOUVEAU </span>
-
-                            <picture class="image__soulier">
-                                <source
-                                    srcset="images/"
-                                    media="(max-width: 600px)"
-                                />
-                                <source
-                                    srcset="https://placehold.co/295x183"
-                                    media="(max-width: 2000px)"
-                                />
-                                <img
-                                    src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
-                                />
-                            </picture>
-                        </div>
-
-                        <div class="soulier__info">
-                            <p class="soulier__genre">HOMMES</p>
-
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
-
-                            <p class="soulier__couleurs">3 couleurs</p>
-
-                            <p class="soulier__prix">129,99$</p>
-                        </div>
-
-                        <button class="soulier__panier">
-                            AJOUTER AU PANIER
-                        </button>
-                    </article>
-
-                    <article class="soulier__carte">
-                        <div class="soulier__images">
-                            <span class="nouveau__soulier"> NOUVEAU </span>
-
-                            <picture class="image__soulier">
-                                <source
-                                    srcset="images/"
-                                    media="(max-width: 600px)"
-                                />
-                                <source
-                                    srcset="https://placehold.co/295x183"
-                                    media="(max-width: 2000px)"
-                                />
-                                <img
-                                    src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
-                                />
-                            </picture>
-                        </div>
-
-                        <div class="soulier__info">
-                            <p class="soulier__genre">HOMMES</p>
-
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
-
-                            <p class="soulier__couleurs">3 couleurs</p>
-
-                            <p class="soulier__prix">129,99$</p>
-                        </div>
-
-                        <button class="soulier__panier">
-                            AJOUTER AU PANIER
-                        </button>
-                    </article>
-
-                    <article class="soulier__carte">
-                        <div class="soulier__images">
-                            <span class="nouveau__soulier"> NOUVEAU </span>
-
-                            <picture class="image__soulier">
-                                <source
-                                    srcset="images/"
-                                    media="(max-width: 600px)"
-                                />
-                                <source
-                                    srcset="https://placehold.co/295x183"
-                                    media="(max-width: 2000px)"
-                                />
-                                <img
-                                    src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
-                                />
-                            </picture>
-                        </div>
-
-                        <div class="soulier__info">
-                            <p class="soulier__genre">HOMMES</p>
-
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
-
-                            <p class="soulier__couleurs">3 couleurs</p>
-
-                            <p class="soulier__prix">129,99$</p>
-                        </div>
-
-                        <button class="soulier__panier">
-                            AJOUTER AU PANIER
-                        </button>
-                    </article>
-
-                    <article class="soulier__carte">
-                        <div class="soulier__images">
-                            <span class="nouveau__soulier"> NOUVEAU </span>
-
-                            <picture class="image__soulier">
-                                <source
-                                    srcset="images/"
-                                    media="(max-width: 600px)"
-                                />
-                                <source
-                                    srcset="https://placehold.co/295x183"
-                                    media="(max-width: 2000px)"
-                                />
-                                <img
-                                    src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
-                                />
-                            </picture>
-                        </div>
-
-                        <div class="soulier__info">
-                            <p class="soulier__genre">HOMMES</p>
-
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
-
-                            <p class="soulier__couleurs">3 couleurs</p>
-
-                            <p class="soulier__prix">129,99$</p>
-                        </div>
-
-                        <button class="soulier__panier">
-                            AJOUTER AU PANIER
-                        </button>
-                    </article>
-
-                    <article class="soulier__carte">
-                        <div class="soulier__images">
-                            <span class="nouveau__soulier"> NOUVEAU </span>
-
-                            <picture class="image__soulier">
-                                <source
-                                    srcset="images/"
-                                    media="(max-width: 600px)"
-                                />
-                                <source
-                                    srcset="https://placehold.co/295x183"
-                                    media="(max-width: 2000px)"
-                                />
-                                <img
-                                    src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
-                                />
-                            </picture>
-                        </div>
-
-                        <div class="soulier__info">
-                            <p class="soulier__genre">HOMMES</p>
-
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
-
-                            <p class="soulier__couleurs">3 couleurs</p>
-
-                            <p class="soulier__prix">129,99$</p>
-                        </div>
-
-                        <button class="soulier__panier">
-                            AJOUTER AU PANIER
-                        </button>
-                    </article>
-
-                    <article class="soulier__carte">
-                        <div class="soulier__images">
-                            <span class="nouveau__soulier"> NOUVEAU </span>
-
-                            <picture class="image__soulier">
-                                <source
-                                    srcset="images/"
-                                    media="(max-width: 600px)"
-                                />
-                                <source
-                                    srcset="https://placehold.co/295x183"
-                                    media="(max-width: 2000px)"
-                                />
-                                <img
-                                    src="https://placehold.co/1000x250"
-                                    alt="Air Force Flyknit"
-                                />
-                            </picture>
-                        </div>
-
-                        <div class="soulier__info">
-                            <p class="soulier__genre">HOMMES</p>
-
-                            <h2 class="soulier__nom">AIR FORCE FLYKNIT</h2>
-
-                            <p class="soulier__couleurs">3 couleurs</p>
-
-                            <p class="soulier__prix">129,99$</p>
+                            <p class="soulier__prix">119,99$</p>
                         </div>
 
                         <button class="soulier__panier">
