@@ -254,7 +254,7 @@ main {
     grid-template-columns: 180px 1fr;
     gap: 10px 50px;
     margin-top: 80px;
-    padding: 50px max(30px, calc((100% - 1400px) / 2));
+    padding: 50px;
     background-color: #292929;
     color: #ffffff;
 }
@@ -283,7 +283,7 @@ main {
     gap: 25px;
 }
 
-.footer__nav a {
+.footer__lien {
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
@@ -298,4 +298,14 @@ main {
     color: #999999;
     font-size: 12px;
     line-height: 1.8;
+}
+
+.footer__réseaux {
+    grid-column: 2;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
 }
