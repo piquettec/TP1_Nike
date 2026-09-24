@@ -6,14 +6,16 @@ Ceci est ma solution pour le TP1. Ce défi m'a permis de concevoir un ou plusieu
 
 ## Sommaire
 
-- [Présentation](#présentation)
-  - [Le défi : des composants accessibles](#le-défi)
-  - [Liens](#liens)
-- [Mon processus](#mon-processus)
-  - [Technologies utilisées](#technologies-utilisées)
-  - [Ce que j'ai appris](#ce-ce-que-jai-appris)
-  - [Développement continu](#développement-continu)
-- [Auteur](#auteur)
+- [TP1 - (2026)](#tp1---2026)
+  - [Sommaire](#sommaire)
+  - [Présentation](#présentation)
+    - [Le défi : des composants accessibles](#le-défi--des-composants-accessibles)
+    - [Liens](#liens)
+  - [Mon Processus](#mon-processus)
+    - [Technologies utilisées](#technologies-utilisées)
+    - [Ce que j'ai appris](#ce-que-jai-appris)
+    - [Développement continu](#développement-continu)
+  - [Auteur](#auteur)
 
 ## Présentation
 
@@ -41,9 +43,11 @@ Les utilisateurs doivent être capables de :
 - **JavaScript Vanille** – Script épuré (syntaxe `let` et fonctions classiques pour débutant) axé sur l'accessibilité ARIA.
 
 ### Ce que j'ai appris
+J'ai appris à faire un bouton filtre qui peut faire afficher les filtres ainsi que les masquer grâce au javascript, ainsi qu'à faire des bon bouton checkbox.
 
 ### Développement continu
 
-Pour mes prochains projets, je souhaite approfondir :
+Pour mes prochains projets, je souhaite approfondir : Mes connaissances en css car je ne suis pas encore capabable de penser au bon code alors que je viens de faire quelque chose de similaire. 
 
 ## Auteur
+Charles Piquette
